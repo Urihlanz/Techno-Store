@@ -23,6 +23,8 @@ const Sell: React.FC = () => {
     return <div>{error}</div>;
   }
 
+  console.log(products);
+
   return (
     <Wrapper>
       <Container>

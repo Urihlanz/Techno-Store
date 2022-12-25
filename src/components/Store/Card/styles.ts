@@ -4,15 +4,26 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px;
-  width: 650px;
+  width: 40%;
+  min-width: 350px;
   height: 500px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
   border-radius: 47px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+    margin-top: 0;
+
+    @media screen and (max-width: 735px) {
+      margin-top: 20px;
+    }
+  }
 `;
 
 export const Image = styled.div<{ image: string }>`
-  max-width: 1280px;
   max-height: 720px;
   width: 100%;
   height: 100%;

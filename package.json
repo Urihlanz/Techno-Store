@@ -6,6 +6,7 @@
     "dist/**/*"
   ],
   "version": "1.0.0",
+  "license": "ISC",
   "scripts": {
     "dev": "webpack serve --mode development --node-env development",
     "build": "webpack --mode production --node-env production",

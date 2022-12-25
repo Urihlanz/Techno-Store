@@ -9,7 +9,9 @@ export const Wrapper = styled.section`
 `;
 
 export const Container = styled.div`
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 `;

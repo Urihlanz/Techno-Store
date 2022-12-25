@@ -12,11 +12,7 @@ const stylesLoader = (isSass) => {
         loader: 'postcss-loader',
         options: {
           postcssOptions: {
-            plugins: [
-              [
-                'autoprefixer',
-              ],
-            ],
+            plugins: [['autoprefixer']],
           },
         },
       },
@@ -46,12 +42,12 @@ module.exports = {
     }),
   ],
   performance: {
-    hints: false
+    hints: false,
   },
   devServer: {
     contentBase: path.join(__dirname, './dist'),
     compress: true,
-    port: 7000,
+    port: 3000,
     watchContentBase: true,
     progress: true,
     historyApiFallback: true,
@@ -77,13 +73,12 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        include: [path.join(__dirname, '../src/fonts')]
+        include: [path.join(__dirname, '../src/fonts')],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-
     ],
   },
   devtool: 'source-map',

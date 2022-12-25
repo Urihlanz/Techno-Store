@@ -25,7 +25,7 @@ type ModalProps = {
 
 const Modal: React.FC<ModalProps> = ({ product, onSwitch }) => {
   const slider = useTypedSelector((state) => state.slider);
-  const { setIncrease, setDecrease, addProduct, chooseProduct } = useAction();
+  const { setIncrease, setDecrease, addProduct } = useAction();
 
   const images = product.images;
 
